@@ -145,12 +145,12 @@ function maybeSimulateTrade() {
   if (score >= 2 && openSlots > 0) {
     const buyPrice = parseFloat(bestBid[0]) - 0.01;
     const qty = parseFloat((ORDER_UNIT / buyPrice).toFixed(2));
-    const sellTarget = parseFloat((buyPrice * 1.001).toFixed(4));
+    const sellTarget = parseFloat((buyPrice * 1.002).toFixed(4));
     buySimulator({ buyPrice, qty, sellTarget });
   } else if (score <= -2 && openSlots > 0) {
     const sellPrice = parseFloat(bestAsk[0]) + 0.01;
     const qty = parseFloat((ORDER_UNIT / sellPrice).toFixed(2));
-    const buyBackTarget = parseFloat((sellPrice * 0.999).toFixed(4));
+    const buyBackTarget = parseFloat((sellPrice * 0.998).toFixed(4));
 
     sellSimulator({ buyPrice: sellPrice, qty, sellTarget: buyBackTarget });
   }

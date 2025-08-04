@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "socks": "^2.8.6",
     "ws": "^8.18.3"
   }
 }
