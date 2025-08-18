@@ -1,11 +1,10 @@
 const { SocksClient } = require("socks");
-
 const proxy = {
-  host: "",
+  host: "15.152.1.115",
   port: 9091,
   type: 5,
-  userId: "",
-  password: "",
+  userId: "algo_session_32331_test",
+  password: "dW90Gkg7Iu7Jp7i0af9Q2Q",
 };
 
 const destination = {
@@ -21,6 +20,7 @@ const destination = {
       proxy,
       command: "connect",
       destination,
+      timeout: 500000,
     });
 
     console.log(
@@ -39,10 +39,10 @@ const destination = {
     });
 
     // Ping every 30s to avoid idle timeout (optional)
-    setInterval(() => {
-      socket.write("PING");
-      console.log("💓 Sent PING to keep socket alive");
-    }, 30000);
+    // setInterval(() => {
+    //   socket.write("PING");
+    //   console.log("💓 Sent PING to keep socket alive");
+    // }, 30000);
   } catch (err) {
     console.error("❌ Failed to connect via SOCKS5:", err.message);
   }

@@ -5,19 +5,19 @@ const proxy = {
   host: "15.152.1.115",
   port: 9091,
   type: 5,
-  userId: "algo_session_323",
-  password: "ajcsAxha12dYUTHi",
+  userId: "algo_session_32331_test",
+  password: "5oLi2QSzZR6c8E49juJ",
 };
 
 const destinations = [
   { host: "google.com", port: 80, type: "http" },
   { host: "example.com", port: 80, type: "http" },
-  {
-    host: "fstream.binance.com", // chỉ hostname thôi
-    port: 443,
-    type: "ws",
-    path: "/ws/solusdt@depth20@100ms", // path để handshake
-  },
+  // {
+  //   host: "fstream.binance.com", // chỉ hostname thôi
+  //   port: 443,
+  //   type: "ws",
+  //   path: "/ws/solusdt@depth20@100ms", // path để handshake
+  // },
 ];
 
 const now = () => new Date().toLocaleTimeString();

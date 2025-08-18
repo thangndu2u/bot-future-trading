@@ -10,8 +10,8 @@ const proxy = {
   host: "15.152.1.115",
   port: 9091,
   type: 5,
-  userId: "algo_session_323",
-  password: "voHh94Fb0Evc7aRk7",
+  userId: "algo_session_32331_test",
+  password: "65BL0218HwiCRTouV",
 };
 
 const now = () => new Date().toLocaleTimeString();
