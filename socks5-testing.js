@@ -2,11 +2,13 @@ const { SocksClient } = require("socks");
 const tls = require("tls");
 
 const proxy = {
-  host: "15.152.1.115",
+  host: "47.128.249.210",
   port: 9091,
   type: 5,
   userId: "algo_session_32331_test",
-  password: "5oLi2QSzZR6c8E49juJ",
+  password: "1g91WQkY2SmO6v50Ul3",
+  // userId: "admin",
+  // password: "admin",
 };
 
 const destinations = [
